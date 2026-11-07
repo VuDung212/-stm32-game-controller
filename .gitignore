@@ -1,0 +1,24 @@
+# Build output
+Objects/
+Listings/
+Debug/
+Release/
+build/
+
+# Keil temporary files
+*.bak
+*.uvguix.*
+*.uvoptx
+*.dep
+*.crf
+*.o
+*.d
+*.axf
+*.hex
+*.elf
+*.map
+*.lst
+
+# Windows temporary files
+Thumbs.db
+Desktop.ini
