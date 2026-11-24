@@ -24,6 +24,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "rtos_startup.h"
 
 /* USER CODE END Includes */
 
@@ -51,6 +52,16 @@
 /* USER CODE BEGIN FunctionPrototypes */
 
 /* USER CODE END FunctionPrototypes */
+
+/* Hook prototypes */
+void vApplicationDaemonTaskStartupHook(void);
+
+/* USER CODE BEGIN DAEMON_TASK_STARTUP_HOOK */
+void vApplicationDaemonTaskStartupHook(void)
+{
+  rtos_startup();
+}
+/* USER CODE END DAEMON_TASK_STARTUP_HOOK */
 
 /* Private application code --------------------------------------------------*/
 /* USER CODE BEGIN Application */
